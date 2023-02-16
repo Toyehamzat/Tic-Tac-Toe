@@ -1,0 +1,125 @@
+:root {
+    --background-color: #c5c3c6;
+    --font-color: #46494b;
+    --header-background-color: #5e6b75;
+    --header-font-color: #46494b;
+    --field-background-color: #ededee;
+    --field-background-color-hover: #d8e4e9;
+    --border-color: #555;
+    --blue-border-color: #2a3a46;
+    --button-background-color: #6f8392;
+    --button-hover-background: #7290a6;
+    --button-active-background: #567b98;
+    --font: 'Varela Round', sans-serif;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font);
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+  
+  h1 {
+    line-height: 0.5;
+  }
+  
+  button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .header {
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: 2px solid var(--blue-border-color);
+    background-color: var(--header-background-color);
+    color: var(--header-font-color);
+    margin-bottom: 15px;
+  }
+  
+  .title {
+    font-size: 90px;
+    text-align: center;
+  }
+  .main {
+    padding: 0 20px;
+  }
+  
+  .message {
+    padding: 20px 0;
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .gamecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 460px;
+    height: 460px;
+    border: 2px solid var(--border-color);
+    margin: 0px auto;
+    gap: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 2px 3px 3px;
+  }
+  
+  .field {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--border-color);
+    background-color: var(--field-background-color);
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+  }
+  
+  .field:hover {
+    background-color: var(--field-background-color-hover);
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .restart-button {
+    padding: 10px 20px;
+    border: 2.5px solid var(--blue-border-color);
+    border-radius: 7px;
+    background-color: var(--button-background-color);
+    color: var(--header-font-color);
+    font-size: 50px;
+    transition: 0.25s all ease-in-out;
+  }
+  
+  .restart-button:hover {
+    transform: scale(0.9);
+    background-color: var(--button-hover-background);
+  }
+  
+  .restart-button:active {
+    background-color: var(--button-active-background);
+  }
+  
