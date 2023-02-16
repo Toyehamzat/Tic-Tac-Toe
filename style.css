@@ -92,6 +92,7 @@
     cursor: pointer;
     user-select: none;
     border-radius: 10px;
+    transform: 0.25s;
   }
   
   .field:hover {
@@ -121,5 +122,39 @@
   
   .restart-button:active {
     background-color: var(--button-active-background);
+  }
+
+  @media (max-width :660px){
+    .title{
+      font-size: 60px;
+    }
+    .message{
+      font-size: 40px;
+    }
+    .restart-button{
+      font-size: 40px;
+    }
+    .gamecontainer{
+      width: 309px;
+      height: 309px;
+    }
+    .field{
+      width: 100px;
+      height: 100px;
+      font-size: 40px;
+    }
+
+  }
+
+  @media(max-width:420px){
+    .title{
+      font-size: 50px;
+    }
+    .message{
+      font-size: 36px;
+    }
+    .restart-button{
+      font-size: 36px;
+    }
   }
   
