@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-A Tic Tac Toe game you can play in your browser!
+A Tic Tac Toe multiplayer game you can play in your browser!
 
 
 
